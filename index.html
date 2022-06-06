@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Pokedex - Tavares</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./api/img.js">
+        // async function getContent(){
+        //     try{
+        //         const response = await fetch('localhost:8080')
+        //         const data = await response.json()
+        //     } catch (error){
+        //         console.log(error)
+        //     }
+        // }
+        
+        // getContent()
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img id="header-img" src="img/pokebola.png"/>
+        <a href="index.html" id="title">Pokedex</a>
+        <a class="menu buttons" href="cadastro.html" name="Cadastrar_Pokemon_Novo" value="Inserir">Inserir</a>
+        <a class="menu buttons" name="Editar" value="Editar">Editar</a>
+        <a class="menu buttons" name="Excluir_Pokemon" value="Remover">Remover</a>
+        <a class="menu buttons" href="info.html" name="Info" value="Info">Info</a>
+        <input class="menu search" type="search" name="Pesquisar" value="Pesquisar"/>
+    </header>
+    <div id="container">
+        <div id="header-container" class="ui inverted segment">
+            <div id="all-pokemon" class="ui cards">
+                    <a onclick="createPokeImage" class="ui secondary button subMenu first">Todos</a>
+                    <a class="subMenu" href="regioes.html">Região</a>
+                    <a class="subMenu" href="type.html">Tipo</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
